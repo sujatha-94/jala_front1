@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Properties Example</title>
+</head>
+<body>
+
+    <script>
+        // Existing constructor function
+        function Car(brand, model) {
+            this.brand = brand;
+            this.model = model;
+        }
+
+        // Add a method to Car using the prototype
+        Car.prototype.getCarInfo = function() {
+            return `${this.brand} ${this.model}`;
+        };
+
+        // Add a new property to the Car function using prototype
+        Car.prototype.year = 2020;
+
+        // Create an instance of Car
+        const myCar = new Car('Toyota', 'Corolla');
+        
+        console.log(myCar.getCarInfo());  // Output: Toyota Corolla
+        console.log(myCar.year);  // Output: 2020
+    </script>
+
+</body>
+</html>

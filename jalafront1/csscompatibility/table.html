@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout Example</title>
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        /* Table with fixed layout */
+        .fixed-layout {
+            table-layout: fixed;
+        }
+
+        /* Table with auto layout */
+        .auto-layout {
+            table-layout: auto;
+        }
+
+        td, th {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table with Fixed Layout</h2>
+    <table class="fixed-layout">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Content 1</td>
+            <td>Content 2</td>
+            <td>Content 3</td>
+        </tr>
+        <tr>
+            <td>Content 4</td>
+            <td>Content 5</td>
+            <td>Content 6</td>
+        </tr>
+    </table>
+
+    <h2>Table with Auto Layout</h2>
+    <table class="auto-layout">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Content 1</td>
+            <td>Content 2</td>
+            <td>Content 3</td>
+        </tr>
+        <tr>
+            <td>Content 4</td>
+            <td>Content 5</td>
+            <td>Content 6</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call() and apply() Example</title>
+</head>
+<body>
+
+    <script>
+        function greet(city, country) {
+            console.log(`Hello, I am from ${city}, ${country}.`);
+        }
+
+        // Using call()
+        greet.call(this, 'New York', 'USA');  // Pass arguments individually
+
+        // Using apply()
+        greet.apply(this, ['London', 'UK']);  // Pass arguments as an array
+
+        // Difference:
+        // `call()` takes arguments individually.
+        // `apply()` takes arguments as an array.
+    </script>
+
+</body>
+</html>

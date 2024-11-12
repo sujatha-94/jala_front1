@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Article Title</h1>
+            <p>Author: John Doe</p>
+        </header>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>This is the introduction section of the article.</p>
+        </section>
+
+        <section>
+            <h2>Details</h2>
+            <p>Here we provide some detailed information.</p>
+
+            <form action="/submit" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section>
+            <h2>Data Table</h2>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            <p>Footer Information &copy; 2024</p>
+        </footer>
+    </article>
+</body>
+</html>

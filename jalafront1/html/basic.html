@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of HTML</title>
+    <style>
+        /* Pseudo-class: Changing color on hover for anchor */
+        a:hover {
+            color: red;
+        }
+
+        /* Pseudo-element: Adding content before blockquote */
+        blockquote::before {
+            content: "“";
+            font-size: 30px;
+            color: gray;
+        }
+
+        /* Styling for spans */
+        span {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Webpage</h1>
+
+    <p>This is a <em>paragraph</em> with <strong>bold</strong> and <span>italic</span> text.</p>
+
+    <h2>Some Useful Links:</h2>
+    <ul>
+        <li><a href="https://www.example.com">Example Link 1</a></li>
+        <li><a href="https://www.example.com">Example Link 2</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Image Example:</h2>
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+
+    <blockquote>
+        "This is a blockquote showing text being quoted from somewhere else."
+    </blockquote>
+
+    <hr>
+
+    <div>
+        <span>Important:</span> This section contains important text in a <strong>span</strong>.
+    </div>
+
+    <p id="navigateSection"><a href="#bottom">Go to Bottom</a></p>
+
+    <div id="bottom">
+        <h3>Bottom Section</h3>
+        <p>You've reached the bottom of the page!</p>
+    </div>
+
+</body>
+</html>

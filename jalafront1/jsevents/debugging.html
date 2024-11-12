@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Log Debugging</title>
+</head>
+<body>
+    <button id="debugButton">Click to Debug</button>
+
+    <script>
+        function calculateSum(a, b) {
+            console.log('Calculating sum...');
+            let sum = a + b;
+            console.log('Sum:', sum); // Logs the calculated sum
+            return sum;
+        }
+
+        document.getElementById('debugButton').addEventListener('click', function() {
+            const result = calculateSum(5, 3);
+            console.log('Final result:', result); // Logs the final result
+        });
+    </script>
+</body>
+</html>

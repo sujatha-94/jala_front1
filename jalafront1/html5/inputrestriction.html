@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Restrictions Example</title>
+</head>
+<body>
+
+    <h1>Input Restrictions Example</h1>
+
+    <!-- Disabled input -->
+    <label for="disabledInput">Disabled Input:</label>
+    <input type="text" id="disabledInput" name="disabledInput" value="You can't edit this" disabled><br><br>
+
+    <!-- Max value input -->
+    <label for="maxInput">Max value (number 1-10):</label>
+    <input type="number" id="maxInput" name="maxInput" min="1" max="10" value="5"><br><br>
+
+    <!-- Maxlength input -->
+    <label for="maxlengthInput">Max length (max 5 characters):</label>
+    <input type="text" id="maxlengthInput" name="maxlengthInput" maxlength="5" placeholder="Up to 5 chars"><br><br>
+
+    <!-- Min value input -->
+    <label for="minInput">Min value (number 10-20):</label>
+    <input type="number" id="minInput" name="minInput" min="10" max="20" value="15"><br><br>
+
+    <!-- Readonly input -->
+    <label for="readonlyInput">Readonly Input:</label>
+    <input type="text" id="readonlyInput" name="readonlyInput" value="You can't change this" readonly><br><br>
+
+    <!-- Required input -->
+    <label for="requiredInput">Required Input (can't be empty):</label>
+    <input type="text" id="requiredInput" name="requiredInput" required placeholder="This is required"><br><br>
+
+    <!-- Size input -->
+    <label for="sizeInput">Input with size restriction:</label>
+    <input type="text" id="sizeInput" name="sizeInput" size="30" placeholder="Max width of 30 characters"><br><br>
+
+    <!-- Input with predefined value -->
+    <label for="valueInput">Predefined value:</label>
+    <input type="text" id="valueInput" name="valueInput" value="Default Value"><br><br>
+
+</body>
+</html>

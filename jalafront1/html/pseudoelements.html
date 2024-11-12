@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes and Elements</title>
+    <style>
+        /* Pseudo-class: Hover effect for anchor */
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-element: Before content for blockquote */
+        blockquote::before {
+            content: "→ ";
+            font-size: 20px;
+            color: blue;
+        }
+
+        /* Pseudo-element: Adding content after a paragraph */
+        p::after {
+            content: " (end of paragraph)";
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Using Pseudo-Classes and Pseudo-Elements</h1>
+
+    <p>This is a paragraph with a <a href="https://www.example.com">link</a> inside it.</p>
+
+    <blockquote>
+        This is a blockquote example.
+    </blockquote>
+
+    <p>This is another paragraph.</p>
+
+</body>
+</html>
